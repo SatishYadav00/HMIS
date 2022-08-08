@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo.login2controller">
+   <top>
+      <AnchorPane prefHeight="130.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="phototwo" fitHeight="135.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/2048px-User_icon_2.svg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="130.0" layoutY="23.0" text="NAME - SUDIP KUNDU">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="65.0" text="DESIGNATION - PHARMACIST">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="logouttwo" layoutX="373.0" layoutY="65.0" mnemonicParsing="false" onAction="#logouttwoonaction" style="-fx-cursor: hand;" text="LOGOUT" />
+            <Button fx:id="profiletwo" layoutX="373.0" layoutY="24.0" mnemonicParsing="false" onAction="#profiletwoonaction" style="-fx-cursor: hand;" text="PROFILE" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logotwo" fitHeight="150.0" fitWidth="200.0" layoutX="286.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/IMG_20220110_193308.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="32.0" layoutY="22.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="PRESCRIPTION INFO" />
+            <Button layoutX="34.0" layoutY="72.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="REPORT SHORTAGE" />
+            <Button layoutX="34.0" layoutY="120.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="UPDATE STOCK INFO" />
+            <Button layoutX="211.0" layoutY="22.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="CHECK REPORT" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

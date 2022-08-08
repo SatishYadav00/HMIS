@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo.profile1controller">
+   <left>
+      <AnchorPane prefHeight="300.0" prefWidth="170.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="profile1photo" fitHeight="146.0" fitWidth="146.0" layoutX="12.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/2048px-User_icon_2.svg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="168.0" text="Profile Photo">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="profile1button" layoutX="59.0" layoutY="226.0" mnemonicParsing="false" onAction="#profile1buttononaction" style="-fx-cursor: hand;" text="BACK" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="300.0" prefWidth="380.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="35.0" layoutY="54.0" text="First Name" />
+            <Label layoutX="35.0" layoutY="85.0" text="Last Name" />
+            <Label layoutX="35.0" layoutY="112.0" text="Date of Birth" />
+            <Label layoutX="35.0" layoutY="141.0" text="Designation" />
+            <Label layoutX="35.0" layoutY="168.0" text="Date of joining" />
+            <Label layoutX="35.0" layoutY="199.0" text="Ph No." />
+            <Label layoutX="35.0" layoutY="226.0" text="Alternative Ph No." />
+            <Label layoutX="35.0" layoutY="252.0" text="Email " />
+            <Label layoutX="140.0" layoutY="54.0" prefHeight="17.0" prefWidth="125.0" text=": SATISH" />
+            <Label layoutX="140.0" layoutY="112.0" prefHeight="17.0" prefWidth="125.0" text=": xx/xx/xxxx" />
+            <Label layoutX="140.0" layoutY="85.0" prefHeight="17.0" prefWidth="125.0" text=": YADAV" />
+            <Label layoutX="140.0" layoutY="141.0" prefHeight="17.0" prefWidth="125.0" text=": DOCTOR" />
+            <Label layoutX="140.0" layoutY="168.0" prefHeight="17.0" prefWidth="125.0" text=": xx/xx/xxxx" />
+            <Label layoutX="140.0" layoutY="199.0" prefHeight="17.0" prefWidth="125.0" text=": 99xxxxxxxxx" />
+            <Label layoutX="140.0" layoutY="226.0" prefHeight="17.0" prefWidth="125.0" text=": NULL" />
+            <Label layoutX="140.0" layoutY="252.0" prefHeight="17.0" prefWidth="125.0" text=": satish@mail.com" />
+            <Label layoutX="63.0" layoutY="14.0" text="PROFILE DETAILS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

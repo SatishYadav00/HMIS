@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AppointmentController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="315.0">
+         <children>
+            <ComboBox fx:id="select" layoutX="67.0" layoutY="23.0" onAction="#selectonaction" prefWidth="150.0" promptText="Select" />
+            <Button fx:id="button" layoutX="116.0" layoutY="349.0" mnemonicParsing="false" onAction="#oncck" text="Done">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Label fx:id="label" layoutX="102.0" layoutY="80.0" prefHeight="33.0" prefWidth="112.0" text="Department" />
+            <Label fx:id="label2" layoutX="36.0" layoutY="205.0" prefHeight="69.0" prefWidth="232.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="316.0" layoutY="-3.0" prefHeight="400.0" prefWidth="286.0">
+         <children>
+            <Pane layoutY="6.0" prefHeight="400.0" prefWidth="286.0">
+               <children>
+                  <ScrollPane layoutY="-1.0" prefHeight="400.0" prefWidth="286.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="287.0">
+                           <children>
+                              <Label fx:id="label1" layoutY="59.0" prefHeight="33.0" prefWidth="112.0" text="Dr. Agrawal Ajit" />
+                              <Label fx:id="label11" prefHeight="33.0" prefWidth="112.0" text="Dr. Khanna Manoj" />
+                              <Label fx:id="label12" layoutY="86.0" prefHeight="34.0" prefWidth="150.0" text="Dr. Banerjee Kedar Ranjan" />
+                              <Label fx:id="label13" layoutY="113.0" prefHeight="33.0" prefWidth="112.0" text="Dr.Satish Yadav" />
+                              <Label fx:id="label14" layoutY="25.0" prefHeight="33.0" prefWidth="112.0" text="Dr. Agarwal Uttam" />
+                              <Label fx:id="label15" layoutY="147.0" prefHeight="33.0" prefWidth="112.0" text="Dr. Chatterjee D." />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

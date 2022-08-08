@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PateintProfileController">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="401.0" prefWidth="599.0">
+         <children>
+            <BorderPane layoutX="-1.0" layoutY="-2.0" prefHeight="402.0" prefWidth="600.0">
+               <top>
+                  <AnchorPane prefHeight="70.0" prefWidth="610.0" style="-fx-background-color: #196151;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="207.0" layoutY="16.0" prefHeight="18.0" prefWidth="171.0" text="Pateint Profile" textFill="#ebe6e6">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="332.0" prefWidth="369.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="32.0" layoutY="27.0" prefHeight="16.0" prefWidth="74.0" text="Name">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="153.0" layoutY="25.0" prefHeight="22.0" prefWidth="108.0" text="Satish Yadav">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="66.0" prefHeight="18.0" prefWidth="82.0" text="Date of Birth">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="152.0" layoutY="102.0" prefHeight="18.0" prefWidth="87.0" text="20">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="209.0" prefHeight="18.0" prefWidth="86.0" text="Department" />
+                        <Label layoutX="28.0" layoutY="174.0" prefHeight="18.0" prefWidth="77.0" text="Mobile no." />
+                        <Label layoutX="34.0" layoutY="140.0" prefHeight="18.0" prefWidth="78.0" text="Gender">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label layoutX="32.0" layoutY="105.0" prefHeight="18.0" prefWidth="78.0" text="Age">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label layoutX="127.0" layoutY="27.0" prefHeight="18.0" prefWidth="18.0" text=":" />
+                        <Label layoutX="126.0" layoutY="66.0" prefHeight="18.0" prefWidth="18.0" text=":" />
+                        <Label layoutX="153.0" layoutY="66.0" prefHeight="18.0" prefWidth="85.0" text="03/05/2001">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="245.0" prefHeight="18.0" prefWidth="74.0" text="Adhaar NO." />
+                        <Label layoutX="123.0" layoutY="106.0" prefHeight="18.0" prefWidth="6.0" text=":" />
+                        <Label layoutX="123.0" layoutY="141.0" prefHeight="18.0" prefWidth="5.0" text=":" />
+                        <Label layoutX="124.0" layoutY="174.0" prefHeight="18.0" prefWidth="5.0" text=":" />
+                        <Label layoutX="121.0" layoutY="209.0" prefHeight="18.0" prefWidth="5.0" text=":" />
+                        <Label layoutX="120.0" layoutY="245.0" prefHeight="18.0" prefWidth="5.0" text=":" />
+                        <Label layoutX="148.0" layoutY="137.0" prefHeight="18.0" prefWidth="94.0" text="male">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="144.0" layoutY="174.0" prefHeight="18.0" prefWidth="103.0" text="8981498074">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="144.0" layoutY="209.0" prefHeight="18.0" prefWidth="102.0" text="ENT">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="144.0" layoutY="245.0" prefHeight="26.0" prefWidth="159.0" text="1234567891245854">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <right>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="pateintimage" fitHeight="120.0" fitWidth="143.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../image/27705-200.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="48.0" layoutY="151.0" prefHeight="18.0" prefWidth="134.0" text="PateintID">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="184.0" prefHeight="18.0" prefWidth="139.0" text="ENT1401202201">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="fix" layoutX="48.0" layoutY="238.0" mnemonicParsing="false" onAction="#fixonaction" text="Fix Appointment" />
+                     </children>
+                  </AnchorPane>
+               </right>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

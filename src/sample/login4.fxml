@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo.login4controller">
+   <top>
+      <AnchorPane prefHeight="131.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="photofour" fitHeight="134.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/2048px-User_icon_2.svg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="131.0" layoutY="31.0" text="NAME - RAHUL ARYAN">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="131.0" layoutY="73.0" text="DESIGNATION - COUNTER ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="104.0" text="MEMBER">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="profilefour" layoutX="372.0" layoutY="32.0" mnemonicParsing="false" onAction="#profilefouronaction" style="-fx-cursor: hand;" text="PROFILE" />
+            <Button fx:id="logoutfour" layoutX="372.0" layoutY="74.0" mnemonicParsing="false" onAction="#logoutfouronaction" style="-fx-cursor: hand;" text="LOGOUT" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logofour" fitHeight="150.0" fitWidth="200.0" layoutX="286.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/IMG_20220110_193308.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="33.0" layoutY="24.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="PATIENT INFO" />
+            <Button layoutX="33.0" layoutY="72.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="VIEW SCHEME DETAILS" />
+            <Button layoutX="33.0" layoutY="118.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="PAYMENT HISTORIES" />
+            <Button layoutX="215.0" layoutY="24.0" mnemonicParsing="false" style="-fx-cursor: hand;" text="CHECK UPDATES" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

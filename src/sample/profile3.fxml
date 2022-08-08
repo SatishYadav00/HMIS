@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo.profile3controller">
+   <left>
+      <AnchorPane prefHeight="300.0" prefWidth="173.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="profile3photo" fitHeight="139.0" fitWidth="140.0" layoutX="17.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../image/2048px-User_icon_2.svg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="38.0" layoutY="175.0" text="Profile Photo">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="profile3button" layoutX="61.0" layoutY="224.0" mnemonicParsing="false" onAction="#profile3buttononaction" text="BACK" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="300.0" prefWidth="282.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="70.0" layoutY="23.0" text="PROFILE DETAILS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="64.0" text="First Name" />
+            <Label layoutX="14.0" layoutY="92.0" text="Last name" />
+            <Label layoutX="14.0" layoutY="117.0" text="User Name" />
+            <Label layoutX="14.0" layoutY="142.0" text="Date of Birth" />
+            <Label layoutX="14.0" layoutY="168.0" text="Designation" />
+            <Label layoutX="14.0" layoutY="194.0" text="Date of Joining" />
+            <Label layoutX="14.0" layoutY="220.0" text="Ph No." />
+            <Label layoutX="14.0" layoutY="244.0" text="Alternative Ph No." />
+            <Label layoutX="14.0" layoutY="269.0" text="Email" />
+            <Label layoutX="138.0" layoutY="64.0" text=": SAYUJ" />
+            <Label layoutX="138.0" layoutY="92.0" text=": PATRA" />
+            <Label layoutX="138.0" layoutY="117.0" text=": sayuj3" />
+            <Label layoutX="138.0" layoutY="142.0" text=": xx/xx/xxxx" />
+            <Label layoutX="138.0" layoutY="168.0" text=": REG. UNIT MEMBER" />
+            <Label layoutX="138.0" layoutY="194.0" text=": xx/xx/xxxx" />
+            <Label layoutX="138.0" layoutY="220.0" text=": 90XXXXXXXX" />
+            <Label layoutX="138.0" layoutY="244.0" text=": 80XXXXXXXX" />
+            <Label layoutX="138.0" layoutY="269.0" text=": sayuj@mail.com" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
